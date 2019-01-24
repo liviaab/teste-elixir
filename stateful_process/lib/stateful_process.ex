@@ -1,0 +1,2 @@
+defmodule StatefulProcess do
+end

@@ -1,6 +1,6 @@
-defmodule Kv do
+defmodule VHDElixir do
   @moduledoc """
-  Documentation for Kv.
+  Documentation for VhdElixir.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule Kv do
 
   ## Examples
 
-      iex> Kv.hello()
+      iex> VhdElixir.hello()
       :world
 
   """

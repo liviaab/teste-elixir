@@ -24,7 +24,7 @@ defmodule Rpn do
 		case op do 
 			:+ -> Agent.update(pid, fn([ second | [ first | rest ] ]) -> [(first + second) | rest] end)
 			:- ->Agent.update(pid, fn([ second | [ first | rest ] ]) -> [(first - second) | rest] end)
-			:x -> Agent.update(pid, fn([ second | [ first | rest ] ]) -> [(first * second) | rest] end)
+			:x - Agent.update(pid, fn([ second | [ first | rest ] ]) -> [(first * second) | rest] end)
 			_ -> Agent.update(pid, fn(x) -> [op | x] end) 	
 		end
 	end
